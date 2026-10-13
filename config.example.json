@@ -1,0 +1,11 @@
+{
+  "data_dir": "C:/Users/YOUR_USER/AppData/Local/LocalRag/index",
+  "sources": [
+    {
+      "id": "notes",
+      "path": "C:/Users/YOUR_USER/Documents/Notes"
+    }
+  ],
+  "max_chars": 1200,
+  "max_file_bytes": 5242880
+}

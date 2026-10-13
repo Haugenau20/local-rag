@@ -1,0 +1,13 @@
+{
+  "purpose": "Synthetic extraction and citation ground truth; retrieval and LLM quality are not yet evaluated",
+  "queries": [
+    {"id": "backup", "query": "How often do backups run?", "path": "maintenance.pdf", "answer_contains": "nightly", "locator": {"kind": "pdf", "page": 1}},
+    {"id": "restore", "query": "Which backup should I restore?", "path": "maintenance.pdf", "answer_contains": "latest verified backup", "locator": {"kind": "pdf", "page": 3}},
+    {"id": "review", "query": "When is the plan reviewed?", "path": "meeting.docx", "answer_contains": "Tuesday", "locator": {"kind": "docx", "part": "body", "paragraph": 2}},
+    {"id": "owner", "query": "Who owns the plan?", "path": "meeting.docx", "answer_contains": "Søren", "locator": {"kind": "docx", "table": 1, "row": 1, "cell": 2}},
+    {"id": "retention", "query": "How long should offline copies be kept?", "path": "meeting.docx", "answer_contains": "30 days", "locator": {"kind": "docx", "part": "body", "paragraph": 4}},
+    {"id": "section", "query": "Which section covers retention?", "path": "meeting.docx", "answer_contains": "Retention", "locator": {"kind": "docx", "part": "body", "paragraph": 3}},
+    {"id": "office", "query": "Which days have office hours?", "path": "office.txt", "answer_contains": "Monday and Wednesday", "locator": {"kind": "text", "start_line": 1, "end_line": 1}},
+    {"id": "updates", "query": "Where are updates stored?", "path": "operations.md", "answer_contains": "local index", "locator": {"kind": "text", "start_line": 1, "end_line": 2}}
+  ]
+}
