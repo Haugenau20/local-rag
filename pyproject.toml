@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==70.2.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-rag"
+version = "0.2.0"
+description = "Local text, PDF and Word indexing with source citations and CPU-only test vectors"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pypdf==6.10.0", "python-docx==1.2.0", "lxml==6.1.1", "typing-extensions==4.16.0"]
+
+[project.optional-dependencies]
+test = ["reportlab==4.4.9", "pillow==12.3.0", "charset-normalizer==3.5.2"]
+
+[project.scripts]
+local-rag = "local_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
